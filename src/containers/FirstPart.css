@@ -1,0 +1,103 @@
+/* FirstPart.css */
+
+/* Base styles */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.list-container {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  padding: 65px;
+  border-bottom: 1px solid white;
+}
+
+.body-part {
+  background-image: url('https://media.istockphoto.com/id/1489671462/photo/group-of-successful-business-people-showing-thumbs-up.jpg?s=2048x2048&w=is&k=20&c=fYA5YbWc9K8ZjOcpjOxnPXAH57Z48ex53b6zDC7r29Y=');
+  background-size: cover;
+  object-fit: contain;
+}
+
+li {
+  font-size: larger;
+  color: white;
+}
+
+.body-secondpart {
+  padding-top: 150px;
+  color: white;
+  margin: 10vw;
+}
+
+h1 {
+  font-size: x-large;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+a:hover {
+  background-color: transparent;
+  color: white;
+}
+
+.previous,
+.next {
+  background-color: transparent;
+  color: orangered;
+}
+
+.round {
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.button-container {
+  display: flex;
+  justify-content: flex-end; /* Align buttons to the right */
+  margin-top: 20px; /* Adjust margin as needed */
+}
+
+.body-part {
+  margin-bottom: 0; /* Remove bottom margin */
+}
+
+.list-containers {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 0;
+  padding: 65px;
+  border-right: 1px solid white;
+}
+
+p {
+  color: white;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .list-container,
+  .list-containers {
+      flex-direction: column; /* Change to column layout on smaller screens */
+      align-items: center; /* Center align items */
+      text-align: center; /* Center align text */
+  }
+
+  .list-container,
+  .list-containers,
+  .body-secondpart {
+      padding: 30px; /* Reduce padding for smaller screens */
+      margin: 5vw; /* Adjust margin for smaller screens */
+  }
+
+  .button-container {
+      justify-content: center; /* Center align buttons on smaller screens */
+  }
+}

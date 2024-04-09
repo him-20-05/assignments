@@ -1,0 +1,41 @@
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Base styles */
+.body-parts {
+    background-color: #061561;
+    padding: 30px;
+    display: flex;
+    flex-direction: right;
+    justify-content: space-evenly;
+}
+
+h1 {
+    color: white;
+}
+
+.round {
+    margin-left: 10px;
+}
+
+.second-part {
+    border-right: 1px solid grey;
+    padding-right: 20px;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    .body-parts {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .second-part {
+        border-right: none; 
+        padding-right: 0; 
+        margin-bottom: 20px; 
+    }
+}

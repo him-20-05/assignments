@@ -1,0 +1,10 @@
+.text-containers{
+    text-align: center;
+    margin: 10vh;
+}
+.small-text {
+    font-size: smaller; 
+    color: black;
+    font-weight: bold;
+  }
+  

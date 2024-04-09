@@ -1,0 +1,87 @@
+/* ThirdPart.css */
+
+/* Base styles */
+.body {
+  position: relative;
+  display: flex;
+  height: 100vh;
+}
+
+.new-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  padding: 50px;
+}
+
+.background-image {
+  flex: 1;
+  position: relative;
+  background-image: url('https://media.istockphoto.com/id/1441410750/photo/successful-young-business-people-talking-working-together-in-front-of-modern-business-building.jpg?s=2048x2048&w=is&k=20&c=JuDdelL9fWOnAtxqqAkie_obkzjjYG86b5wDkac53HQ=');
+  background-size: cover;
+  background-position: center;
+}
+
+.h1-tag {
+  color: black;
+  font-size: xx-large;
+}
+
+.stay-connected {
+  color: orange;
+}
+
+.icon-text {
+  display: flex;
+  align-items: center;
+  margin-top: 20px; /* Adjusted margin */
+}
+
+.text {
+  margin-left: 10px;
+  font-weight: bolder;
+}
+
+.lorem-text {
+  margin-top: 20px; /* Adjusted margin */
+  text-align: center;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+  .new-body {
+    padding: 30px;
+  }
+
+  .icon-text,
+  .lorem-text {
+    margin-top: 20px; /* Adjusted margin */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .new-body {
+    padding: 20px;
+  }
+
+  .icon-text,
+  .lorem-text {
+    margin-top: 15px; /* Further adjusted margin */
+  }
+}
+
+@media screen and (max-width: 412px) {
+  .h1-tag {
+    font-size: large; /* Adjust font size automatically */
+  }
+
+  .icon-text {
+    margin-top: 20px; /* Adjusted margin for icons */
+  }
+
+  .lorem-text {
+    margin-top: 20px; /* Adjusted margin for lorem text */
+  }
+}
